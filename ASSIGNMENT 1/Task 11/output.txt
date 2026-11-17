@@ -1,0 +1,21 @@
+| Test case                                    | Expected           | Actual             | Result |
+|----------------------------------------------|--------------------|--------------------|--------|
+| Bike 61 min -> 2 hours x 10                  | 20.0               | 20.0               | PASS |
+| Car 130 min -> 3 hours x 30                  | 90.0               | 90.0               | PASS |
+| EV 130 min + 10 kWh                          | 210.0              | 210.0              | PASS |
+| Zero minutes                                 | 0.0                | 0.0                | PASS |
+| Exactly 60 min (slab boundary)               | 30.0               | 30.0               | PASS |
+| 61 min (just over boundary)                  | 60.0               | 60.0               | PASS |
+| Daily maximum (600 min car capped 240)       | 240.0              | 240.0              | PASS |
+| Last free slot used -> lot full              | IllegalStateException | IllegalStateException | PASS |
+| Unknown vehicle type                         | IllegalArgumentException | IllegalArgumentException | PASS |
+| Duplicate registration number                | IllegalStateException | IllegalStateException | PASS |
+| Invalid slot number release                  | false              | false              | PASS |
+| Exit with no ticket                          | NoSuchElementException | NoSuchElementException | PASS |
+| Negative duration                            | IllegalArgumentException | IllegalArgumentException | PASS |
+| Student with pass parks free                 | 0.0                | 0.0                | PASS |
+| Visitor with 'pass' still pays               | 60.0               | 60.0               | PASS |
+| Day collection (hand calc = 500)             | 500.0              | 500.0              | PASS |
+
+Passed 16, failed 0
+1000 worst-case lookups, n=20000: ArrayList 303591 us (O(n)), HashMap 1289 us (O(1))
