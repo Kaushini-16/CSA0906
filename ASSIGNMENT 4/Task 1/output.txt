@@ -1,0 +1,1 @@
+Test valid payment, empty register number, invalid amount, zero/negative amount, Clear and Receipt. The service uses a demonstration response, not a real bank/database.
