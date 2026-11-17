@@ -1,0 +1,7 @@
+Sample run (create card.txt in this folder first):
+Enter account number: 123456
+Enter withdrawal amount: 1000
+Withdrawal successful. Remaining balance: 4000.00
+ATM session ended. Please collect your card.
+
+Try invalid amount, non-numeric input, and an amount above 5000 as separate tests.
