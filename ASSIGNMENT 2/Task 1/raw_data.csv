@@ -1,0 +1,19 @@
+workload,approach,avg_ms,alloc_MB_per_run,est_intermediate_strings,est_chars_copied
+"A: short ticket (8 fields x 100,000 tickets)",String +,17.645,70.95,800000,39600000
+"A: short ticket (8 fields x 100,000 tickets)",StringBuilder,27.844,47.30,100000,17600000
+"A: short ticket (8 fields x 100,000 tickets)",StringBuffer,23.187,48.07,100000,17600000
+"A: short ticket (8 fields x 100,000 tickets)",String.join,15.156,17.55,100000,17600000
+"A: short ticket (8 fields x 100,000 tickets)",StringJoiner,12.195,18.44,100000,17600000
+"A: short ticket (8 fields x 100,000 tickets)",String.format,60.717,237.70,100000,17600000
+"B: 50 fields x 10,000 tickets",String +,11.583,172.12,500000,153000000
+"B: 50 fields x 10,000 tickets",StringBuilder,4.900,29.60,10000,12000000
+"B: 50 fields x 10,000 tickets",StringBuffer,7.605,29.68,10000,12000000
+"B: 50 fields x 10,000 tickets",String.join,2.980,8.54,10000,12000000
+"B: 50 fields x 10,000 tickets",StringJoiner,9.431,12.05,10000,12000000
+"B: 50 fields x 10,000 tickets",String.format,63.513,160.68,10000,12000000
+"C: own - long ticket (2,000 fields x 50 tickets)",String +,93.948,1343.56,100000,1400700000
+"C: own - long ticket (2,000 fields x 50 tickets)",StringBuilder,0.802,4.89,50,2800000
+"C: own - long ticket (2,000 fields x 50 tickets)",StringBuffer,0.887,4.89,50,2800000
+"C: own - long ticket (2,000 fields x 50 tickets)",String.join,0.633,1.75,50,2800000
+"C: own - long ticket (2,000 fields x 50 tickets)",StringJoiner,1.316,2.16,50,2800000
+"C: own - long ticket (2,000 fields x 50 tickets)",String.format,5.737,30.83,50,2800000

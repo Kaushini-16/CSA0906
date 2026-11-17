@@ -1,0 +1,10 @@
+Trial 1: expected 6400000 | StringBuilder = 5618220 (ArrayIndexOutOfBoundsException) | StringBuffer = 6400000
+Trial 2: expected 6400000 | StringBuilder = 2400000 (ArrayIndexOutOfBoundsException) | StringBuffer = 6400000
+Trial 3: expected 6400000 | StringBuilder = 5219506 (ArrayIndexOutOfBoundsException) | StringBuffer = 6400000
+Trial 4: expected 6400000 | StringBuilder = 1347456 (ArrayIndexOutOfBoundsException) | StringBuffer = 6400000
+Trial 5: expected 6400000 | StringBuilder = 6379646 (ArrayIndexOutOfBoundsException) | StringBuffer = 6400000
+Trial 6: expected 6400000 | StringBuilder = 4379646 (ArrayIndexOutOfBoundsException) | StringBuffer = 6400000
+Trial 7: expected 6400000 | StringBuilder = 4800000 (ArrayIndexOutOfBoundsException) | StringBuffer = 6400000
+Trial 8: expected 6400000 | StringBuilder = 5292240 (ArrayIndexOutOfBoundsException) | StringBuffer = 6400000
+Trial 9: expected 6400000 | StringBuilder = 4800000 (ArrayIndexOutOfBoundsException) | StringBuffer = 6400000
+Trial 10: expected 6400000 | StringBuilder = 694910 (ArrayIndexOutOfBoundsException) | StringBuffer = 6400000
