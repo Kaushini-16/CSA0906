@@ -1,0 +1,7 @@
+n,design,ms_per_200_serves,us_per_serve,comparisons_per_serve,alloc_MB
+2000,rebuild PQ per serve,10.607,53.04,1919,5.92
+2000,5 level queues,0.095,0.48,4,0.00
+10000,rebuild PQ per serve,38.483,192.42,9925,30.11
+10000,5 level queues,0.007,0.03,4,0.00
+50000,rebuild PQ per serve,98.745,493.72,49929,152.53
+50000,5 level queues,0.016,0.08,4,0.00

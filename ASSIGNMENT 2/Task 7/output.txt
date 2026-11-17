@@ -1,0 +1,12 @@
+Validation: 45000 serve decisions over 30 random simulations -> identical sequences: true
+
+n patients waiting, then 200 serves (avg of 3 runs after warm-up)
+n         design                     total ms      us/serve  comparisons/serve     alloc MB
+2000      rebuild PQ per serve          10.61          53.0               1919         5.92
+2000      5 level queues                 0.10           0.5                  4         0.00
+10000     rebuild PQ per serve          38.48         192.4               9925        30.11
+10000     5 level queues                 0.01           0.0                  4         0.00
+50000     rebuild PQ per serve          98.74         493.7              49929       152.53
+50000     5 level queues                 0.02           0.1                  4         0.00
+
+(sink=477600)
