@@ -1,0 +1,7 @@
+Enter parking minutes: minutes = 130
+Integer division fee      : Rs 60.0
+Cast after division fee   : Rs 60.0
+Math.ceil(min/60.0) fee   : Rs 90.0
+(m+59)/60 integer fee     : Rs 90.0
+1D index of floor 2 slot 7 (50 per floor) = 107
+Total slots in jagged array = 9
