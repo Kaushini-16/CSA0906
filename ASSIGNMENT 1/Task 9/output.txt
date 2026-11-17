@@ -1,0 +1,3 @@
+TN02B2 Rs 90.0 | payer-ready TN02B2
+TN03C3 Rs 210.0 | payer-ready TN03C3
+Student pays 0.0, visitor pays 90.0
