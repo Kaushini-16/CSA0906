@@ -1,0 +1,7 @@
+With the supplied input files:
+Reading store1.txt
+Reading store2.txt
+Report generated: sales-report.txt
+
+To test a failure, temporarily rename store2.txt and run again. The try-with-resources
+implementation closes the reader and writer even when an exception occurs.

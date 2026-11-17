@@ -1,0 +1,2 @@
+Store 1: Sales = 12000
+Store 1: Sales = 8500
