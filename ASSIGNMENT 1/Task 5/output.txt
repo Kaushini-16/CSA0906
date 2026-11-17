@@ -1,0 +1,6 @@
+North ticket 1 (instance counter 1)
+South ticket 2 (instance counter 1)  <- instance counter would repeat 1
+North ticket 3
+SIMATS occupancy = 3
+SIMATS occupancy = 2
+Ticket reference cleared -> object eligible for garbage collection
