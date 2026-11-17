@@ -1,0 +1,5 @@
+Creating ElectricCar:
+  Vehicle constructor: TN03C3
+  Car constructor
+  ElectricCar constructor, battery 40 kWh
+Electric Car Vehicle TN03C3 (40 kWh)
