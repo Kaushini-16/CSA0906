@@ -1,0 +1,16 @@
+n,structure,build_ms,lookup100k_ms,ns_per_lookup,codeOrderReport_ms,insertionOrderReport_ms,codeOrderOK,insertionOrderOK
+10000,HashMap,3.28,6.162,62,7.55,0.96,true,false
+10000,TreeMap,11.00,85.371,854,1.11,0.45,true,false
+10000,LinkedHashMap,3.36,13.816,138,10.37,1.27,true,true
+10000,Hashtable,2.92,11.480,115,5.57,0.42,true,false
+10000,SortedArray+binarySearch,8.57,54.693,547,0.86,0.12,true,true
+100000,HashMap,35.56,11.109,111,91.66,3.87,true,false
+100000,TreeMap,92.47,90.078,901,6.72,8.80,true,false
+100000,LinkedHashMap,15.31,5.519,55,44.11,2.44,true,true
+100000,Hashtable,12.00,7.607,76,31.11,2.31,true,false
+100000,SortedArray+binarySearch,294.78,179.665,1797,11.74,5.98,true,true
+500000,HashMap,55.88,7.938,79,294.94,11.90,true,false
+500000,TreeMap,907.23,192.074,1921,41.66,39.10,true,false
+500000,LinkedHashMap,62.21,9.633,96,372.03,22.70,true,true
+500000,Hashtable,62.82,15.891,159,267.39,20.83,true,false
+500000,SortedArray+binarySearch,540.98,141.203,1412,10.40,3.78,true,true

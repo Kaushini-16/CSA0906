@@ -1,0 +1,26 @@
+
+== n = 10000 medicines, 100000 lookups
+Structure                   build ms 100k lookups  ns/lookup   code-order rpt insertion-order rpt  code?   ins?
+HashMap                          3.3         6.16         62             7.55               0.96    yes     NO
+TreeMap                         11.0        85.37        854             1.11               0.45    yes     NO
+LinkedHashMap                    3.4        13.82        138            10.37               1.27    yes    yes
+Hashtable                        2.9        11.48        115             5.57               0.42    yes     NO
+SortedArray+binarySearch         8.6        54.69        547             0.86     needs 2nd list    yes    n/a
+
+== n = 100000 medicines, 100000 lookups
+Structure                   build ms 100k lookups  ns/lookup   code-order rpt insertion-order rpt  code?   ins?
+HashMap                         35.6        11.11        111            91.66               3.87    yes     NO
+TreeMap                         92.5        90.08        901             6.72               8.80    yes     NO
+LinkedHashMap                   15.3         5.52         55            44.11               2.44    yes    yes
+Hashtable                       12.0         7.61         76            31.11               2.31    yes     NO
+SortedArray+binarySearch       294.8       179.67       1797            11.74     needs 2nd list    yes    n/a
+
+== n = 500000 medicines, 100000 lookups
+Structure                   build ms 100k lookups  ns/lookup   code-order rpt insertion-order rpt  code?   ins?
+HashMap                         55.9         7.94         79           294.94              11.90    yes     NO
+TreeMap                        907.2       192.07       1921            41.66              39.10    yes     NO
+LinkedHashMap                   62.2         9.63         96           372.03              22.70    yes    yes
+Hashtable                       62.8        15.89        159           267.39              20.83    yes     NO
+SortedArray+binarySearch       541.0       141.20       1412            10.40     needs 2nd list    yes    n/a
+
+(sink=2243330400)
