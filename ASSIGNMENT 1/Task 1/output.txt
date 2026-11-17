@@ -1,0 +1,5 @@
+Search worst case, n = 200000 (both O(n))
+Parallel arrays : index 199999, 5942 us
+Objects         : TN199999, 2213 us
+Adding a new attribute: parallel arrays -> new array + edit every method;
+objects -> add one field to VehicleRecord only.
