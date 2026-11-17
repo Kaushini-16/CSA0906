@@ -1,0 +1,19 @@
+Ties at every level, correct comparator:
+  [Team[name=Eagles, points=9, goalDiff=6], Team[name=Lions, points=9, goalDiff=6], Team[name=Bisons, points=9, goalDiff=4], Team[name=Panthers, points=9, goalDiff=4], Team[name=Cobras, points=6, goalDiff=1], Team[name=Hawks, points=6, goalDiff=1], Team[name=Wolves, points=6, goalDiff=-2], Team[name=Tigers, points=3, goalDiff=0]]
+
+Overflow data (points: Integer.MIN_VALUE+5, 2,000,000,000, 5)
+  subtraction comparator: Low(-2147483643,0) High(2000000000,0) Mid(5,0)   <- WRONG (High must be first)
+  correct comparator    : High(2000000000,0) Mid(5,0) Low(-2147483643,0)
+  antisymmetry violations=2, transitivity violations=4
+
+No name tie-breaker, two input orders of the same data:
+  order 1: Eagles(9,6) Lions(9,6) Panthers(9,4) Bisons(9,4) Cobras(6,1) Hawks(6,1) Wolves(6,-2) Tigers(3,0)
+  order 2: Lions(9,6) Eagles(9,6) Bisons(9,4) Panthers(9,4) Hawks(6,1) Cobras(6,1) Wolves(6,-2) Tigers(3,0)
+  identical? false  (a correct ranking must not depend on input order)
+  with full comparator identical? true
+  antisymmetry violations=0, transitivity violations=0
+
+Comparable<Player> natural board: [Player[name=Asha, score=55], Player[name=Ravi, score=40], Player[name=Kumar, score=40]]
+
+500,000 teams: results identical = true
+One comparator chain: 507 ms (1 sort)   Three stable sorts: 730 ms (3 sorts)
