@@ -1,0 +1,4 @@
+Expected output:
+Seats sold: 10
+
+Run repeatedly. The synchronized method prevents two threads from booking the same seat.
