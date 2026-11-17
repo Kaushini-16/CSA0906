@@ -1,0 +1,1 @@
+Run schema.sql in MySQL, add MySQL Connector/J, and set PASSWORD in EventRegistrationApp.java. Test successful registration, blank fields, duplicate student/event, and filtering. The UNIQUE constraint prevents duplicate registrations. Task 6 requires a configured MySQL server and JDBC driver.
