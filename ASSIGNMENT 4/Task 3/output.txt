@@ -1,0 +1,1 @@
+Resize the window to small, medium and large sizes. The BorderLayout centre results area should grow while the search and bottom control rows remain arranged. Search results are demonstration data.
