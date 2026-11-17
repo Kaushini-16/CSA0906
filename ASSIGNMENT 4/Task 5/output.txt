@@ -1,0 +1,1 @@
+Run the four versions by changing main() to instantiate FrameVersion, NamedInnerVersion, AnonymousVersion or LambdaVersion. Default launches lambda. Test valid amount, invalid text and pressing Enter. Rates are illustrative, not live exchange rates.
