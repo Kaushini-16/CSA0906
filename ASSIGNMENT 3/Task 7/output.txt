@@ -1,0 +1,8 @@
+Run with different pool sizes:
+java ResultProcessor 1
+java ResultProcessor 2
+java ResultProcessor 4
+java ResultProcessor 8
+
+The sample setup has two valid score files, one corrupt file and one missing file.
+Expected summary: successes=2, failures=2. Completion order may vary.
