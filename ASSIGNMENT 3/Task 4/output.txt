@@ -1,0 +1,3 @@
+The station completion order can vary between runs.
+The final line should appear only after all four threads have completed:
+All stations completed. Total scripts scanned: 20
