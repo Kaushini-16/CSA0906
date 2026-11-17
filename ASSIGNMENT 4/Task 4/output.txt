@@ -1,0 +1,1 @@
+Click in the drawing area: dots appear and the count increases. Minimise and restore: dots remain because points are stored and redrawn in paint(). @Override detects a misspelled mouseClicked method.
