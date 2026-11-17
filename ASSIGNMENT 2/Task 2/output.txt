@@ -1,0 +1,37 @@
+
+== Playlist size n = 10000   (microseconds per operation; iterate = ms total)
+Operation                           ArrayList   LinkedList   ArrayDeque  Array(manual)
+add at end (per op)                     0.036        0.094        0.128          0.152
+insert at front                         2.216        0.164        0.078          6.714
+insert in middle                        1.062       11.517          n/a          4.352
+remove front                            1.077        0.274        0.311          4.785
+remove middle                           0.754        7.695          n/a          2.787
+get k-th (random)                       0.078        9.799          n/a          0.055
+iterate whole list (total ms)           1.398        1.438        0.705          0.169
+
+== Playlist size n = 50000   (microseconds per operation; iterate = ms total)
+Operation                           ArrayList   LinkedList   ArrayDeque  Array(manual)
+add at end (per op)                     0.009        0.020        0.008          0.008
+insert at front                         4.293        0.011        0.389         20.187
+insert in middle                        1.952       39.850          n/a         11.117
+remove front                            4.040        0.016        0.008         17.948
+remove middle                           2.539       39.819          n/a          9.933
+get k-th (random)                       0.014       22.037          n/a          0.452
+iterate whole list (total ms)           3.876        3.543        0.534          0.355
+
+== Playlist size n = 100000   (microseconds per operation; iterate = ms total)
+Operation                           ArrayList   LinkedList   ArrayDeque  Array(manual)
+add at end (per op)                     0.013        0.011        0.009          0.004
+insert at front                         7.819        0.011        0.005         38.735
+insert in middle                        3.951      123.947          n/a         18.634
+remove front                            8.073        0.014        0.005         39.293
+remove middle                           4.160       92.656          n/a         18.147
+get k-th (random)                       0.016       64.642          n/a          0.035
+iterate whole list (total ms)           1.300        0.792        0.234          0.158
+
+== Up Next queue: 200,000 mixed operations (add front, add back, remove front) on a queue of 5,000 songs; total ms
+ArrayList        339.04 ms
+LinkedList         3.20 ms
+ArrayDeque        14.83 ms
+
+(sink=232663645500)  raw data written to raw_data.csv
