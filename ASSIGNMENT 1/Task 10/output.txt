@@ -1,0 +1,6 @@
+parked at [0, 0]
+fee = 90.0
+rejected: duration cannot be negative
+invalid slot release = false
+Integer 1000 == 1000 : false  equals: true
+Integer 100  == 100  : true  (cached -128..127)
