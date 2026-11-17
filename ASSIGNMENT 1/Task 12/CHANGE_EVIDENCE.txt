@@ -1,0 +1,10 @@
+Files app/Main.java and app/Main.java differ
+Only in model: DeliveryVan.java
+Only in model: EBike.java
+Only in model: MonthlyPass.java
+Only in model: OneDayPass.java
+Files model/ParkingTicket.java and model/ParkingTicket.java differ
+Only in model: Pass.java
+Files model/Vehicle.java and model/Vehicle.java differ
+Files model/VehicleFactory.java and model/VehicleFactory.java differ
+Files service/ParkingLot.java and service/ParkingLot.java differ

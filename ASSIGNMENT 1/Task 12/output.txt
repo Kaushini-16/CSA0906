@@ -1,0 +1,16 @@
+| Test case                                        | Expected   | Actual     | Result |
+|--------------------------------------------------|------------|------------|--------|
+| E-bike 10 min -> flat 15                         | 15.0       | 15.0       | PASS |
+| E-bike 300 min -> still flat 15                  | 15.0       | 15.0       | PASS |
+| Van 9:00-11:00 (peak) 2 x 60                     | 120.0      | 120.0      | PASS |
+| Van 8:00-10:00 (1 off-peak + 1 peak)             | 90.0       | 90.0       | PASS |
+| Van 17:00-18:00 (off-peak) 30                    | 30.0       | 30.0       | PASS |
+| Visitor car, one-day pass, 600 min: fee only     | 0.0        | 0.0        | PASS |
+| Visitor car, one-day pass across midnight        | 240.0      | 240.0      | PASS |
+| Student monthly pass free                        | 0.0        | 0.0        | PASS |
+| Old rule unchanged: car 130 min                  | 90.0       | 90.0       | PASS |
+| Old rule unchanged: EV 130 min + 10 kWh          | 210.0      | 210.0      | PASS |
+| 5-floor jagged facility capacity                 | 200        | 200        | PASS |
+| Day collection (hand calc = 305)                 | 305.0      | 305.0      | PASS |
+
+Passed 12, failed 0
