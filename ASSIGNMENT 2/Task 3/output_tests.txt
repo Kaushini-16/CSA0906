@@ -1,0 +1,16 @@
+Test 1 (same object scanned twice, no hashCode)
+  Prediction: 2 (same reference -> same identity hash, equals true)   Observed: 2
+Test 2 (equal but distinct objects, no hashCode)
+  Prediction: 3 normally (different identity hashes -> usually different buckets, equals never called)   Observed: 3
+Test 2b (same scans, hashCode added)  Prediction: 2   Observed: 2
+Test 3 (regNo changed after insertion)
+  Prediction: size 1 but contains(m) = false, and adding the same student again gives size 2
+  Observed: contains(m) = false, size after adding again = 2
+Test 4 (TreeSet, compareTo by name; two DIFFERENT students named Arun)
+  Prediction: 1 (compareTo == 0 treated as duplicate although equals is false)   Observed: 1
+Alternatives -> HashMap<String,Student>: 2, TreeSet with regNo comparator: 2
+
+Time to process 1,000,000 scans with 100,000 unique students (avg of 5 runs, ms):
+  HashSet     147.4 ms   unique = 99995
+  TreeSet    1020.6 ms   unique = 99995
+  HashMap     138.5 ms   unique = 99995
