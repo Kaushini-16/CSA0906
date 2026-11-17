@@ -1,0 +1,6 @@
+Car(TN02B2) | TwoWheeler(TN09Z9)
+a.equals(b) = true  hash equal = true
+HashSet contains b (same regNo)? true
+TN02B2 fee for 130 min = 90.0
+TN02B2 fee for 130 min = 90.0
+TN09Z9 fee for 130 min = 30.0
