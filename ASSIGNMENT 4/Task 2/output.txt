@@ -1,0 +1,1 @@
+Change department and verify doctor choices refresh. Try blank patient ID, then make a booking and observe the confirmation dialog. This sample UI does not save appointments to a database.
