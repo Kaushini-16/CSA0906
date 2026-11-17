@@ -1,0 +1,5 @@
+TokenCounter expected output:
+Sum of tokens collected: 210 (expected 210)
+
+WalletTransfer expected output:
+Total wallet balance: 2000
