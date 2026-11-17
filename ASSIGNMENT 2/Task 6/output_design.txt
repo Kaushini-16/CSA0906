@@ -1,0 +1,23 @@
+Hand-worked expected order : Meena(S1) Kumar(S1) Lata(S2) Divya(S2) Ravi(S3) John(S3) Prem(S4) Asha(S5)
+Printing the PQ directly   : [Meena(S1), Kumar(S1), Lata(S2), Prem(S4), Ravi(S3), John(S3), Divya(S2), Asha(S5)]   <- heap array order, NOT treatment order
+Waiting list (sorted copy) : [Meena(S1), Kumar(S1), Lata(S2), Divya(S2), Ravi(S3), John(S3), Prem(S4), Asha(S5)]
+Actual poll() order        : Meena(S1) Kumar(S1) Lata(S2) Divya(S2) Ravi(S3) John(S3) Prem(S4) Asha(S5)
+Matches hand calculation   : true
+
+Growth of PriorityQueue (avg of 3 runs, ns per operation):
+n                 add ns/op     poll ns/op
+10000                   220            529
+100000                   94            357
+1000000                 111            436
+
+Starvation experiment (2 arrivals of severity 1-2 per tick, 1 served per tick, 2,000 ticks):
+  No aging  : Asha (severity 5) served? false   still waiting behind 2001 patients
+  With aging (1 level per 50 time units): Asha served at tick 193 (a severity-s patient reaches the top level after at most (s-1) x 50 time units)
+
+Alternatives, n admits then n serves (avg of 3 runs, total ms):
+n             PriorityQueue Sorted LinkedList    5 FIFO queues
+5000                    1.1             62.9              0.4
+20000                   4.6            845.5              2.9
+50000                  14.4          18166.9              1.7
+
+(sink=2037747330000)
