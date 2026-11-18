@@ -1,0 +1,16 @@
+ILLUSTRATIVE OUTPUT FORMAT – NOT A CAPTURED RUN
+
+Find P1003: [P1003, 192311003, Divya, 7, 3800.0]
+Find missing: null
+Route 7: 1 valid record(s)
+Damaged record skipped: true
+
+1 MB: unbuffered=<your measured value> ms; buffered=<your measured value> ms
+10 MB: unbuffered=<your measured value> ms; buffered=<your measured value> ms
+50 MB: unbuffered=<your measured value> ms; buffered=<your measured value> ms
+
+Find in 1000 records: <your measured value> ms
+Find in 10000 records: <your measured value> ms
+Find in 100000 records: <your measured value> ms
+
+Replace placeholders with the output from your own execution.
