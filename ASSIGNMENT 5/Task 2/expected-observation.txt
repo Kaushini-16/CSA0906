@@ -1,0 +1,5 @@
+Expected observation (not measured data):
+- Both implementations should count the same number of newline characters.
+- Buffered reading should generally be faster for large files.
+- Actual elapsed times depend on CPU, storage, JVM warm-up, cache state and machine load.
+Fill the CSV with your own repeated measurements; do not treat this note as benchmark evidence.
